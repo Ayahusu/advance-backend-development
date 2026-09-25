@@ -1,0 +1,14 @@
+class A{
+    method;
+}
+
+class B {
+    A* a;
+    B() {a = new A()}
+    method;
+}
+main(){
+    B* b = new B();
+    b->method();
+    b->a->method();
+}
